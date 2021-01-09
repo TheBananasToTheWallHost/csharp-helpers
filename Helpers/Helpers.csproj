@@ -2,6 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>BananaTurtles.CSharp.Utils</PackageId>
+    <PackageVersion>1.0.0.0</PackageVersion>
+    <Authors>Ryan Mileris</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectURL>https://github.com/TheBananasToTheWallHost/csharp-helpers</PackageProjectURL>
+    <Description>Library with potentially useful utility functions.</Description>
+    <PackageReleaseNotes>Includes: math utility functions for rounding to nearest power of 2.</PackageReleaseNotes>
+    <PackageTags>utils helpers cs</PackageTags>
   </PropertyGroup>
 
 </Project>
