@@ -10,7 +10,7 @@ namespace BananaTurtles.CSharp.Utils
         /// <param name="x">An integer</param>
         /// <returns>The nearest power of 2 less than or equal to <paramref name="x"/> or
         /// 0 if there are no powers of 2 less than or equal to <paramref name="x"/>.</returns>
-        public static int FloorToPowerOfTwo(int x) {
+        public static int FloorPow2(int x) {
             if(x <= 0) {
                 return 0;
             }
@@ -34,7 +34,7 @@ namespace BananaTurtles.CSharp.Utils
         /// <param name="strict">If true, the function will only return a power of 2, otherwise it may return the MaxValue of
         /// <see cref="Int32.MaxValue"/></param>
         /// <returns></returns>
-        public static int CeilingToPowerOfTwo(int x, bool strict = true) {
+        public static int CeilingPow2(int x, bool strict = true) {
             if(x <= 0) {
                 return 1;
             }
@@ -53,7 +53,7 @@ namespace BananaTurtles.CSharp.Utils
             }
 
             x <<= 1;
-            return FloorToPowerOfTwo(x);
+            return FloorPow2(x);
 
         }
     }
